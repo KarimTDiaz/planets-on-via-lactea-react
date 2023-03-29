@@ -1,5 +1,18 @@
+import Header from './components/header/Header';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router/Router';
+import { GlobalStyle } from './styles/globalStyles';
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	return (
+		<>
+			<GlobalStyle />
+			<BrowserRouter>
+				<Header />
+				<Router />
+			</BrowserRouter>
+		</>
+	);
 };
 
 export default App;
