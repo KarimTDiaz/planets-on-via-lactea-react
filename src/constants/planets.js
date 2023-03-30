@@ -1,39 +1,56 @@
 import { v4 } from 'uuid';
 
-const PLANETS = [
+export const PLANETS = [
 	{
 		id: v4(),
-		name: 'mercury',
-		color: '#DEF4FC'
+		name: 'MERCURY',
+		color: '#DEF4FC',
+		route: '/mercury'
 	},
 	{
 		id: v4(),
-		name: 'venus',
-		color: '#F7CC7F'
+		name: 'VENUS',
+		color: '#F7CC7F',
+		route: '/venus'
 	},
 	{
 		id: v4(),
-		name: 'earth',
-		color: '#545BFE'
+		name: 'EARTH',
+		color: '#545BFE',
+		route: '/earth'
 	},
 	{
 		id: v4(),
-		name: 'mars',
-		color: '#FF6A45'
+		name: 'MARS',
+		color: '#FF6A45',
+		route: '/mars'
 	},
 	{
 		id: v4(),
-		name: 'jupiter',
-		color: '#ECAD7A'
+		name: 'JUPITER',
+		color: '#ECAD7A',
+		route: '/jupiter'
 	},
 	{
 		id: v4(),
-		name: 'saturn',
-		color: '#FCCB6B'
+		name: 'SATURN',
+		color: '#FCCB6B',
+		route: '/saturn'
 	},
 	{
 		id: v4(),
-		name: 'jupiter',
-		color: '#ECAD7A'
-	}
+		name: 'URANUS',
+		color: '#65F0D5',
+		route: '/uranus'
+	},
+	{
+		id: v4(),
+		name: 'NEPTUNE',
+		color: '#497EFA',
+		route: '/neptune'
+	},
+
 ];
+
+
+

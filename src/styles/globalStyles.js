@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { COLORS } from "../constants/variables";
+import { COLORS, FONTS_FAMS } from "../constants/variables";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -29,7 +29,7 @@ body {
     max-width: 100vw;
     margin-left: auto;
     margin-right: auto;
-	font-family:  sans-serif;
+	font-family:  ${FONTS_FAMS.primaryFont};
     background-image: url('/images/background-stars.svg');
     background-color: ${COLORS.bgColor};
 }

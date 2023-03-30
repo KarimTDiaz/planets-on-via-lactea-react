@@ -1,25 +1,13 @@
-import { MenuColor, MenuItem, MenuLink, StyledMenu } from './styles';
-import { PLANET_COLORS } from '../../constants/variables';
-import { v4 } from 'uuid';
-const planets = [
-	'mercury',
-	'venus',
-	'earth',
-	'mars',
-	'jupiter',
-	'saturn',
-	'uranus',
-	'neptune'
-];
+import { MenuItem, MenuLink, StyledMenu } from './styles';
+import { PLANETS } from '../../constants/planets';
 const Menu = () => {
-	console.log(Object.keys(PLANET_COLORS));
 	return (
 		<nav>
 			<StyledMenu>
-				{planets.map(planet => (
-					<MenuItem key={v4()}>
-						<MenuColor color={planet} />
-						<MenuLink>{planet.toUpperCase()}</MenuLink>
+				{PLANETS.map(planet => (
+					<MenuItem key={planet.id} color={planet.color}>
+						<MenuLink to={planet.route} color={planet.color}>{planet.name}
+						</MenuLink>
 					</MenuItem>
 				))}
 			</StyledMenu>
