@@ -6,4 +6,4 @@ height: 17px;
 `
 
 
-export {StyledMenuIcon}
+export { StyledMenuIcon }

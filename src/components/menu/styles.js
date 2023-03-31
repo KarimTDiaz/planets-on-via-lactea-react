@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { COLORS, FONTS_FAMS, PLANET_COLORS } from '../../constants/variables';
+import { COLORS, FONTS_FAMS } from '../../constants/variables';
 
 const StyledMenu = styled.ul`
 	position: absolute;
@@ -13,7 +13,16 @@ const StyledMenu = styled.ul`
 const MenuItem = styled.li`
 	display: flex;
 	gap: 2rem;
-	margin-bottom: 3rem;
+	position: relative;
+	margin-bottom: 4rem;
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: -2rem;
+		width: 100%;
+		height: 1px;
+		background-color:${COLORS.disabledColor} ;
+	}
 `;
 
 const MenuLink = styled(NavLink)`
