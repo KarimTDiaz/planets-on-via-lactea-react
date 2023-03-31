@@ -1,6 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { COLORS, FONTS_FAMS } from "../constants/variables";
-
+import { createGlobalStyle } from 'styled-components';
+import { COLORS, FONTS_FAMS } from '../constants/variables';
 
 const GlobalStyle = createGlobalStyle`
 *,*::after,*::before{
@@ -32,7 +31,8 @@ body {
 	font-family:  ${FONTS_FAMS.primaryFont};
     background-image: url('/images/background-stars.svg');
     background-color: ${COLORS.bgColor};
+	overflow-x: hidden;
 }
-`
+`;
 
-export { GlobalStyle }
+export { GlobalStyle };

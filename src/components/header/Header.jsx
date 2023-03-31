@@ -4,12 +4,12 @@ import MenuIcon from '../menu-icon/MenuIcon';
 import Menu from '../menu/Menu';
 
 const Header = () => {
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 	return (
 		<StyledHeader>
 			<HeaderTop>
 				<HeaderTitle>THE PLANETS</HeaderTitle>
-				<Menu />
+				<Menu setOpen={setOpen} open={open} />
 				<MenuIcon open={open} setOpen={setOpen} />
 			</HeaderTop>
 		</StyledHeader>

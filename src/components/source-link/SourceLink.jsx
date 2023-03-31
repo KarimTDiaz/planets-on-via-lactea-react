@@ -1,11 +1,20 @@
-import { StyledSourceLink, SourceLinkText, SourceLinkUrl, SourceLinkIcon } from "./styles"
+import {
+	StyledSourceLink,
+	SourceLinkText,
+	SourceLinkUrl,
+	SourceLinkIcon
+} from './styles';
 
 const SourceLink = ({ url }) => {
-    return <StyledSourceLink>
-        <SourceLinkText>Source: </SourceLinkText>
-        <SourceLinkUrl href={url}>Wikipedia</SourceLinkUrl>
-        <SourceLinkIcon src='/images/icon-source.svg' />
-    </StyledSourceLink>
-}
+	return (
+		<StyledSourceLink>
+			<SourceLinkText>Source: </SourceLinkText>
+			<SourceLinkUrl href={url} target='_blank'>
+				Wikipedia
+			</SourceLinkUrl>
+			<SourceLinkIcon src='/images/icon-source.svg' />
+		</StyledSourceLink>
+	);
+};
 
-export default SourceLink
+export default SourceLink;

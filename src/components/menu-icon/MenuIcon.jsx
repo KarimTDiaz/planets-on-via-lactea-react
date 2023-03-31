@@ -4,7 +4,7 @@ const MenuIcon = ({ open, setOpen }) => {
 	return (
 		<StyledMenuIcon
 			onClick={() => setOpen(!open)}
-			src={open ? '/images/icon-hamburger.svg' : '/images/x-solid.svg'}
+			src={open ? '/images/x-solid.svg' : '/images/icon-hamburger.svg'}
 		/>
 	);
 };

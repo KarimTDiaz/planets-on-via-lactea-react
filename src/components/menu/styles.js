@@ -4,11 +4,14 @@ import { COLORS, FONTS_FAMS } from '../../constants/variables';
 
 const StyledMenu = styled.ul`
 	position: absolute;
-	top: 100px;
+	top: 80px;
 	left: 0;
 	width: 100%;
 	padding: 1rem 1.5rem;
-display: none;
+	background-color: ${COLORS.bgColor};
+	z-index: 10;
+	transform: translateX(${({ open }) => (open ? '0' : '100%')});
+	transition: transform 0.5s;
 `;
 
 const MenuItem = styled.li`
@@ -16,13 +19,13 @@ const MenuItem = styled.li`
 	gap: 2rem;
 	position: relative;
 	margin-bottom: 4rem;
-	&:not(:last-child)::after{
+	&:not(:last-child)::after {
 		content: '';
 		position: absolute;
 		bottom: -2rem;
 		width: 100%;
 		height: 1px;
-		background-color:${COLORS.disabledColor} ;
+		background-color: ${COLORS.disabledColor};
 	}
 `;
 
@@ -41,14 +44,13 @@ const MenuLink = styled(NavLink)`
 		width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		background-color: ${COLORS.disabledColor}
+		background-color: ${COLORS.disabledColor};
 	}
 	&.active {
 		color: ${({ color }) => color};
-		&::before{
+		&::before {
 			background-color: ${({ color }) => color};
 		}
-		
 	}
 `;
 
