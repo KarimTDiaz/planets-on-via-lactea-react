@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { COLORS } from '../../constants/variables';
+import { COLORS, FONTS_FAMS, FONTS_SIZE } from '../../constants/variables';
 
 const StyledHeader = styled.header`
-position: relative;
+	position: relative;
 `;
 
 const HeaderTop = styled.div`
@@ -13,6 +13,8 @@ const HeaderTop = styled.div`
 `;
 
 const HeaderTitle = styled.h1`
+	font-size: ${FONTS_SIZE.l};
+	font-family: ${FONTS_FAMS.secondaryFont};
 	color: ${COLORS.titleColor};
 `;
 export { HeaderTop, StyledHeader, HeaderTitle };

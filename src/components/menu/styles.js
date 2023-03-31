@@ -8,6 +8,7 @@ const StyledMenu = styled.ul`
 	left: 0;
 	width: 100%;
 	padding: 1rem 1.5rem;
+display: none;
 `;
 
 const MenuItem = styled.li`
@@ -15,7 +16,7 @@ const MenuItem = styled.li`
 	gap: 2rem;
 	position: relative;
 	margin-bottom: 4rem;
-	&::after{
+	&:not(:last-child)::after{
 		content: '';
 		position: absolute;
 		bottom: -2rem;
@@ -27,6 +28,8 @@ const MenuItem = styled.li`
 
 const MenuLink = styled(NavLink)`
 	position: relative;
+	display: inline-block;
+	width: 100%;
 	left: 3rem;
 	font-family: ${FONTS_FAMS.primaryFont};
 	color: ${COLORS.disabledColor};
@@ -45,6 +48,7 @@ const MenuLink = styled(NavLink)`
 		&::before{
 			background-color: ${({ color }) => color};
 		}
+		
 	}
 `;
 

@@ -1,7 +1,7 @@
 import { StyledText } from "./styles"
 
-const Text = ({ text }) => {
-    return <StyledText>{text}</StyledText>
+const Text = ({ text, size }) => {
+    return <StyledText size={size}>{text}</StyledText>
 }
 
 export default Text
