@@ -1,5 +1,6 @@
 import { MenuItem, MenuLink, StyledMenu } from './styles';
 import { PLANETS_MENU } from '../../constants/planets';
+
 const Menu = ({ setOpen, open }) => {
 	return (
 		<nav>
